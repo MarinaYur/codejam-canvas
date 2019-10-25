@@ -53,9 +53,32 @@
                         <div><p>red</p></div>
                         <div><img src="images/blue.png"></div>
                         <div><p>blue</p></div>
-                        </div></div>
+                        </div>
+                    </div>
                 </div>
-            <canvas class="canvas"></canvas>
+            </div>
+                <canvas id="canvas" height="32px" width="32px" ></canvas>
+                <script>                    
+                    fetch("https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/32x32.json")
+                    .then(response => response.json())
+                    .then(json => {
+                        let canvas = document.getElementById('canvas');
+                        ctx = canvas.getContext('2d');
+                        let x = 0;
+                        let y = 0;
+                        pic = json;
+                        for (let i = 0; i < pic.length; i++) {
+                            for (let j = 0; j < pic.length; j++) {                                
+                                pic[i][j][3] = pic[i][j][3]*100/255;                    
+                                ctx.fillStyle = 'rgba' + '(' + pic[i][j].join() + ')';
+                                ctx.fillRect(x, y, 1, 1);
+                                x++;
+                            }
+                            x = 0;
+                            y += 1;
+                        }
+                    });
+                </script>
         </main>   
         </div>
 </body>
