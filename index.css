@@ -46,38 +46,6 @@ margin-top: 8px;
 margin: 8px 13px 0 0;
 }
 
-/*.menu--strips {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin: -9px 0 0 19px;;
-}
-
-.menu--strips span::before,
-.menu--strips span::after, 
-.menu--strips span {
-    position: absolute;
-    top: 50%; margin-top: -1px;
-    left: 10%; margin-left: -10px;
-    width: 18px;
-    height: 2px;
-    background-color: black;
-}
-
-.menu--strips span::before,
-.menu--strips span::after {
-    content: '';
-}
-
-.menu--strips span::before {
-    transform: translateY(-5px);
-}
-
-.menu--strips span::after {
-    transform: translateY(5px);
-}*/
-
 main {
     display: flex;
     justify-content: space-between;
@@ -137,9 +105,18 @@ color: rgba(0, 0, 0, 0.541327);
     height: 512px;
     width: 512px;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    margin: -8px 152px 0px 0;
+    margin: -8px 0px 0px 219px;
     display: flex;
     justify-content: center;
     align-items: center;
     image-rendering: pixelated;
+}
+
+.buttons {
+    height: 50px;
+    padding: 41px;
+}
+
+button {
+    background-color: yellowgreen;
 }
