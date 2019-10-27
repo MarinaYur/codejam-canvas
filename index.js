@@ -5,7 +5,7 @@ function drawImage1() {
     canvas.width = 256;
     canvas.height = 256;
     let pic = new Image();
-    pic.src = 'data/image.png';
+    pic.src = 'images/image.png';
     pic.onload = function () {
         ctx.drawImage(pic, 0, 0);
     }

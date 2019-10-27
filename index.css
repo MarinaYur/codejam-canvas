@@ -14,14 +14,12 @@
     display: flex;
     height: 48px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .menu--strips img {
-margin-top: 8px;
+    margin-top: 8px;
 }
-
 
 .menu-logo p {    
     font-family: "Roboto", sans-serif;
@@ -43,7 +41,7 @@ margin-top: 8px;
 }
 
 .menu-dots {
-margin: 8px 13px 0 0;
+    margin: 8px 13px 0 0;
 }
 
 main {
@@ -66,7 +64,6 @@ main {
     display: flex;
 }
 
-
 .panel__instr_top, .panel__color_top {
     width: 100%;
     height: 112px;
@@ -79,22 +76,22 @@ main {
 }
 
 #grid {
- display: grid;
- grid-template-rows: 1fr 1fr;
- grid-template-columns: 1fr 2fr;
- width: 196px;
- text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    width: 196px;
+    text-align: center;
 }
 
 #grid p {
-font-family: "Roboto", sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: top;
-color: rgba(0, 0, 0, 0.541327);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: top;
+    color: rgba(0, 0, 0, 0.541327);
 }
 
 #grid img {
